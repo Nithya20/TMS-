@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .vl {
+            border-left: 1px solid black;
+
+            height: 65px;
+        }
+
+        h4 {
+            color: #00303F;
+        }
+
+        .btn {
+            width: 50%;
+            margin-top: 30px;
+            font-size: large;
+        }
+
+        .form-row {
+            padding-left: 25px;
+            padding-right: 5px;
+        }
+
+        hr.new {
+            border-top: 1px dashed grey;
+            padding-right: 5px;
+
+            width: 97%;
+
+
+        }
+
+        .table {
+            padding-left: 25px;
+            width: 97%;
+        }
+
+        #blue {
+            color: #89C3D0;
+        }
+
+        .colorid {
+            color: #1C4753;
+        }
+
+        .h3 {
+            color: #073543;
+        }
+
+        #sub {
+            margin-top: 10px;
+            background-color: #F1F7FC;
+        }
+
+        .card {
+            background-color: rgb(222, 236, 249);
+        }
+
+        #row {
+            background-color: rgb(222, 236, 249);
+        }
+
+        #yellow {
+            color: #E49331;
+        }
+
+        #blue1 {
+            color: #508ECC;
+        }
+
+        #green {
+            color: #55A582;
+        }
+
+        #red {
+            color: #AF4A3F;
+        }
+        div.name{
+            width:45px;
+            padding: 3px;
+            color: #FFFFFF;
+            background-color: #AE473B;
+
+        }
+        div.medium{
+            width:65px;
+            padding: 3px;
+            color: #FFFFFF;
+            background-color:#E49331;
+        }
+        div.low{
+            width:40px;
+            padding: 3px;
+            color: #FFFFFF;
+            background-color: #1D8DA4;
+
+        }
+
+        h2,
+        h4 {
+            color: rgb(0, 48, 62);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row " id="row">
+
+            <div class="col-10 ">
+                <h2 class="center pt-2"> <img src="smiley.gif" height="40" width="40"> TICKETING SYSTEM</h2>
+
+
+            </div>
+            <span class="vl"></span>
+            <h4 class="float-center mx-auto py-3"><i class="fa fa-user-circle-o" aria-hidden="true"></i> M Yallamma</h4>
+
+        </div>
+        <form>
+            <div class="form-row">
+
+                <div class="form-group col-md-2">
+                    <label for="inputState">Status</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>All</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputState">Category</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Application</option>
+                        <option>...</option>
+                    </select>
+                </div>
+
+
+
+            </div>
+            <hr class="new">
+            <div class="h3">
+                <div class="text-center">
+                    <h3>List My Ticket Request</h3>
+                </div>
+            </div>
+
+
+            <div class="colorid">
+                <center>
+                    <table class="table">
+                        <thead class="thead-grey">
+                            <tr class="table-active">
+
+                                <th scope="col">SL#</th>
+                                <th scope="col">Problem Statement</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Sub-Category</th>
+                                <th scope="col">Priority</th>
+                                <th scope="col">Assigned To</th>
+                                <th scope="col">View/Add Comments</th>New
+                                <th scope="col">Status</th>
+                                <th scope="col">Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Can't access VPN</td>
+                                <td>Server</td>
+                                <td>-</td>
+                                <td ><div class="name">High</div></td>
+                                <td>Namith</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="blue">New</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <th scope="row">2</th>
+                                <td>Can't login to application</td>
+                                <td>application</td>
+                                <td>Airtel</td>
+                                <td ><div class="name">High</div></td>
+                                <td>Pavan D K</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="blue">New</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Application is not loading</td>
+                                <td>Application</td>
+                                <td>Microsoft</td>
+                                 <td ><div class="name">High</div></td>
+                                <td>Sahil A</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="yellow">Pending</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Application is not loading</td>
+                                <td>Application</td>
+                                <td>Airtel</td>
+                                <td><div class="medium">Medium</div></td>
+                                <td>Sahil A</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="blue1">On Hold</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Can't login to application</td>
+                                <td>Application</td>
+                                <td>-</td>
+                                <td><div class="medium">Medium</div></td>
+                                <td>Pavan D K</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="green">Approved</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Can't access VPN</td>
+                                <td>Server</td>
+                                <td>-</i>
+                                </td>
+                                <td><div class="low">Low</div></td>
+                                <td>Pavan D K</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="red">Rejected</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Can't login to application</td>
+                                <td>Application</td>
+                                <td>Airtel</td>
+                                <td ><div class="name">High</div></td>
+                                <td>Namith</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="yellow">Pending</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Can't access VPN</td>
+                                <td>Server</td>
+                                <td>Namith</td>
+                                <td ><div class="name">High</div></td>
+                                <td>Namith</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="yellow">Pending</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Application is not loading</td>
+                                <td>Application</td>
+                                <td>Microsoft</td>
+                                <td ><div class="name">High</div></td>
+                                <td>Pavan D K</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                                <td id="green">Approved</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Application is not loading</td>
+                                <td>Application</td>
+                                <td>Microsoft</td>
+                                <td><div class="medium">Medium</div></td>
+                                <td>Sahil A</td>
+                                <td><i class="fa fa-eye" aria-hidden="true"></i>
+                                </td>
+                                <td id="green">Approved</td>
+                                <td id="blue1"><i class="fa fa-pencil" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+            </label>
+    </div>
+    </div>
+
+    </form>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
